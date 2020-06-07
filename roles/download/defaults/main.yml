@@ -55,7 +55,7 @@ etcd_version: v3.3.12
 
 # gcr and kubernetes image repo define
 gcr_image_repo: "gcr.io"
-kube_image_repo: "k8s.gcr.io"
+kube_image_repo: "docker.io/mirrorgcrio"
 
 # docker image repo define
 docker_image_repo: "docker.io"
@@ -440,7 +440,7 @@ busybox_image_tag: 1.31.1
 helm_version: "v3.1.3"
 helm_image_repo: "{{ docker_image_repo }}/lachlanevenson/k8s-helm"
 helm_image_tag: "{{ helm_version }}"
-tiller_image_repo: "{{ gcr_image_repo }}/kubernetes-helm/tiller"
+tiller_image_repo: "{{ docker_image_repo }}/sapcc/tiller"
 tiller_image_tag: "{{ helm_version }}"
 
 registry_image_repo: "{{ docker_image_repo }}/library/registry"
